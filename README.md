@@ -74,6 +74,7 @@ SheSecure/
 ├── vectorizer.pkl  
 ├── templates/  
 ├── static/  
+├── images/ 
 
 ---
 ## Screenshots

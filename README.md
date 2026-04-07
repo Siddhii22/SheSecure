@@ -79,7 +79,7 @@ SheSecure/
 
 ## Run Locally
 
-git clone https://github.com/your-username/SheSecure.git  
+git clone https://github.com/Siddhi22/SheSecure.git
 cd SheSecure  
 
 pip install flask scikit-learn numpy pandas  

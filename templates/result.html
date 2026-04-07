@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🛡️ Prediction Result</h1>
+
+    <h2>State: {{ state }}</h2>
+
+    <h2>Risk Level:
+        <span style="color: {{ 'green' if risk=='Low' else 'orange' if risk=='Medium' else 'red' }}">
+            {{ '🟢 Low' if risk=='Low' else '🟡 Medium' if risk=='Medium' else '🔴 High' }}
+        </span>
+    </h2>
+
+    <h2>Sentiment:
+        <span style="color: {{ 'green' if sentiment=='Safe' else 'red' }}">
+            {{ '🟢 Safe' if sentiment=='Safe' else '🔴 Unsafe' }}
+        </span>
+    </h2>
+
+    <p class="explanation">
+        This area shows <b>{{ risk }}</b> risk based on crime statistics,
+        while user perception indicates it is <b>{{ sentiment }}</b>.
+    </p>
+
+    <h3>📍 Risk Map</h3>
+    <iframe src="/static/map.html" width="100%" height="350"></iframe>
+
+    <br><br>
+    <a href="/">🔁 Try Again</a>
+
+</div>
+
+</body>
+</html>

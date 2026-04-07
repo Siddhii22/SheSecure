@@ -76,6 +76,21 @@ SheSecure/
 ├── static/  
 
 ---
+## Screenshots
+
+### State Mode – Input
+![State Input](images/state_input.png)
+
+### State Mode – Result
+![State Result](images/state_result.png)
+
+### Manual Mode – Input
+![Manual Input](images/manual_input.png)
+
+### Manual Mode – Result
+![Manual Result](images/manual_result.png)
+
+---
 
 ## Run Locally
 
